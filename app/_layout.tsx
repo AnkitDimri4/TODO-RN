@@ -23,14 +23,14 @@ export default function RootLayout() {
 // import { Stack } from "expo-router";
 // export default function RootLayout() {
 //   return (
-//     // <Stack />;
+    // <Stack />;
 //     <ThemeProvider>
 //       <Stack
-//       // screenOptions={{ headerShown: false}} // If we are using this
+      // screenOptions={{ headerShown: false}} // If we are using this
 //       >
 //         <Stack.Screen
 //           name="Tabs"
-//           // options={{title:"Home"}} // Then there is not no need to use of this.
+          // options={{title:"Home"}} // Then there is not no need to use of this.
 //         />
 //       </Stack>
 //     </ThemeProvider>
