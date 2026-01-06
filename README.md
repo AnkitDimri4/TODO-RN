@@ -4,36 +4,57 @@
 
 # TODO-RN 📱
 
-A **React Native Todo application** built using **Expo** for the frontend and **Convex** as the backend. This project demonstrates modern mobile app development with file-based routing, async storage, and real-time backend integration.
+A **React Native Todo application** built using **Expo** for the frontend and **Convex** as the backend. This project demonstrates modern mobile app development with file-based routing, async storage, real-time data synchronization, and a clean, polished UI.
 
 ---
 
+## ✨ Features
+
+*  Create, edit, and delete todos
+*  **ProgressStats**: Track total, completed, and active todos
+*  **Preferences**:
+
+  * Dark mode toggle
+  * Notification settings
+  * Auto-sync support
+*  **Danger Zone**: Delete all todos in a single click
+*  **LoadingSpinner** for async operations
+*  **EmptyState** UI when no todos are available
+* 🎨 Gradient-based UI using `expo-linear-gradient`
+
+---
+
+
 ##  Tech Stack
+
 
 * **Frontend:** React Native, Expo, TypeScript
 * **Backend:** Convex
-* **State & Storage:** Async Storage
+* **Styling:** Modular stylesheets + Linear Gradients
+* **State & Storage:** Convex + Async patterns
 * **Tooling:** Node.js, npm, Git, VS Code
 
 ---
 
-##  Project Structure (High Level)
+## 📂 Project Structure (High Level)
 
 ```
 TODO-RN/
-│── app/                # App screens (file-based routing)
-│── assets/             # Images and static assets
-│── convex/             # Convex backend (schema, functions)
-│── hooks/              # Custom React hooks
-│── node_modules/       # Dependencies (ignored in Git)
-│── .env.local          # Environment variables (ignored)
-│── app.json            # Expo configuration
-│── package.json        # Project dependencies & scripts
-│── tsconfig.json       # TypeScript configuration
-│── README.md           # Project documentation
+│── app/                 # App screens (Expo Router)
+│── components/          # Reusable UI components
+│── assets/
+│   └── styles/          # home.styles.ts, settings.styles.ts
+│── convex/              # Backend schema & functions
+│── hooks/               # Custom hooks (useTheme)
+│── .env                 # Public environment variables
+│── .env.local           # Convex deployment (ignored)
+│── app.json             # Expo configuration
+│── package.json         # Dependencies & scripts
+│── README.md            # Documentation
 ```
 
 ---
+
 
 ##  Installation & Setup
 
@@ -49,6 +70,7 @@ npx create-expo-app@latest
 npm install
 npm i @react-native-async-storage/async-storage
 npm i convex
+npx expo install expo-linear-gradient
 ```
 
 ---
@@ -103,12 +125,56 @@ This moves starter files to `app-example/` and creates a clean `app/` folder.
 
 ---
 
+##  Environment Configuration (Important)
+
+To avoid **WebSocket error (code 1006)** on Android, configure the Convex URL correctly.
+
+### `.env` (tracked)
+
+**Android Emulator:**
+
+```env
+EXPO_PUBLIC_CONVEX_URL=http://10.0.2.2:3210
+```
+
+**Real Android Device:**
+
+```env
+EXPO_PUBLIC_CONVEX_URL=http://<your-local-ip>:3210
+```
+
+### `.env.local` (auto-generated, ignored)
+
+```env
+CONVEX_DEPLOYMENT=anonymous:anonymous-Todo-RN
+```
+
+---
+
+## UI & Architecture Highlights
+
+* Modular styles using `home.styles.ts` and `settings.styles.ts`
+* Reusable components:
+
+  * Header
+  * TodoInput
+  * ProgressStats
+  * Preferences
+  * DangerZone
+  * LoadingSpinner
+  * EmptyState
+* Centralized theme handling with `useTheme`
+
+---
+
 ## Best Practices Followed
 
-* Clean folder structure
-* `.gitignore` to avoid unnecessary files
+* Clean and scalable folder structure
+* Environment variables properly managed
+* `.gitignore` configured for safety
 * Modular components and hooks
-* Separate backend logic using Convex
+* Reusable, readable components
+* Separate backend logic using Convex,  Separation of UI
 
 ---
 
@@ -133,4 +199,3 @@ This moves starter files to `app-example/` and creates a clean `app/` folder.
 This project is ideal for learning **modern React Native development**, backend integration with Convex, and real-world app structure using Expo.
 
 ---
-
