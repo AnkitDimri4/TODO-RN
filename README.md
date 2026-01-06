@@ -8,7 +8,11 @@ A **React Native Todo application** built using **Expo** for the frontend and **
 
 ---
 
-## ✨ Features
+
+https://github.com/user-attachments/assets/3065c555-f74a-4c38-8546-bacc5c37c95a
+
+
+##  Features
 
 *  Create, edit, and delete todos
 *  **ProgressStats**: Track total, completed, and active todos
