@@ -15,7 +15,7 @@ You can preview and test the app **without installing an APK** by using **Expo G
 ### Steps:
 
 - 1. Install **Expo Go** from the Play Store / App Store
-- 2. Open this link on your phone:
+- 2. Open this link on your phone and scan the QR code from there:
    👉 **[https://sl1nk.com/Todo-RN](https://sl1nk.com/Todo-RN)**
    **OR** scan the QR code below using the Expo Go app  
   <img width="1312" height="795" alt="image" src="https://github.com/user-attachments/assets/4275738b-ea4f-41c0-bc45-01220f5fb0a8" />
