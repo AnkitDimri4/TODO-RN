@@ -8,9 +8,25 @@ A **React Native Todo application** built using **Expo** for the frontend and **
 
 ---
 
+## 📱 Run the App Using Expo Go
 
+You can preview and test the app **without installing an APK** by using **Expo Go**.
+
+### Steps:
+
+- 1. Install **Expo Go** from the Play Store / App Store
+- 2. Open this link on your phone:
+   👉 **[https://sl1nk.com/Todo-RN](https://sl1nk.com/Todo-RN)**
+   **OR** scan the QR code below using the Expo Go app  
+  <img width="1312" height="795" alt="image" src="https://github.com/user-attachments/assets/4275738b-ea4f-41c0-bc45-01220f5fb0a8" />
+- **3. The app will load instantly, you can interact with it and verify all features**
+
+> This method is recommended for quick testing and sharing the app during development.
+
+---
 https://github.com/user-attachments/assets/3065c555-f74a-4c38-8546-bacc5c37c95a
 
+---
 
 ##  Features
 
